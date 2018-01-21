@@ -103,6 +103,7 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+    color: white;
 }
 
 /**
@@ -451,7 +452,9 @@ template {
 
 @font-face {
     font-family: "ShUnicaHaas";
-    src: url("./font/ShUnicaHaas-Regular.otf");
+    src: url("./font/NeueHaasUnicaW1G-Regular.ttf");
+    /*src: url("./font/ShUnicaHaas-Regular.otf");*/
+
     /*src:
     url("css/fonts/Harabara.woff") format("woff"),
     url("css/fonts/Harabara.otf") format("opentype"),
@@ -505,6 +508,16 @@ article p {
     position: fixed;
 }
 
+.social {
+    padding-left: 30px;
+    padding-top: 105px;
+    font-size: 35px;
+}
+
+.social p {
+    margin: 0;
+}
+
 @media screen and (min-width: 1500px) {
     article {
         padding-left: 511px;
@@ -518,12 +531,20 @@ article p {
 }
 
 @media screen and (max-width: 850px) {
+    .social {
+        position: absolute;
+        font-size: 35px;
+        top: 28px;
+        padding: 0;
+        padding-left: 63vw;
+    }
+
     .site-header {
         position: absolute;
     }
 
     .title-component {
-        position: inherit;
+        position: absolute;
     }
 
     article {
@@ -540,6 +561,14 @@ article p {
 }
 
 @media screen and (max-width: 500px) {
+    .social {
+        position: absolute;
+        font-size: 7vw;
+        top: 28px;
+        padding: 0;
+        padding-left: 61vw;
+    }
+
     article p {
         font-size: 7vw;
         line-height: 8vw;
